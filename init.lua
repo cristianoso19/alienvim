@@ -23,7 +23,6 @@ function map(mode, lhs, rhs, opts)
 end
 
 vim.g.mapleader = " "
-map('i','jk','<ESC>', { noremap = true})
 map('n','<Leader>q',':q<CR>')
 map('n','<Leader>w',':w<CR>')
 map('n','<Leader>s',':HopChar2<CR>')
@@ -49,6 +48,7 @@ map('n','<Leader>8','8gt')
 map('n','<Leader>9','9gt')
 map('n','<Leader>0',':tablast<CR>')
 
+map('i','jk','<ESC>', { noremap = true})
 map('i','<C-h>','<Left>')
 map('i','<C-j>','<Down>')
 map('i','<C-k>','<Up>')
