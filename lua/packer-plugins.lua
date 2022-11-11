@@ -96,10 +96,6 @@ return require ('packer').startup(function()
 		indent = {
 			enable = true
 		},
-		--highlight = {
-			--enable = true,
-			--disable = { "c", "rust", "css" }
-		--},
 		autotag = {
 			enable = true,
 		},
@@ -108,8 +104,8 @@ return require ('packer').startup(function()
 			extended_mode = true,
 			max_file_lines = nil,
 		}
-
 	}
+
 	use {
 	"folke/trouble.nvim",
 	requires = "kyazdani42/nvim-web-devicons",
@@ -207,10 +203,11 @@ return require ('packer').startup(function()
 	use ('sheerun/vim-polyglot')
 	use ('tpope/vim-surround')
 	use ('mattn/emmet-vim')
-	vim.cmd[[
+	vim.cmd([[
 		let g:user_emmet_leader_key=','
 		let g:user_emmet_install_global=0
-	]]
+		autocmd FileType html,css,vue,blade EmmetInstall
+	]])
 	use 'karb94/neoscroll.nvim'
 	require('neoscroll').setup()
 	use 'tpope/vim-sensible'
