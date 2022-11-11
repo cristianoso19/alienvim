@@ -207,6 +207,10 @@ return require ('packer').startup(function()
 	use ('sheerun/vim-polyglot')
 	use ('tpope/vim-surround')
 	use ('mattn/emmet-vim')
+	vim.cmd[[
+		let g:user_emmet_leader_key=','
+		let g:user_emmet_install_global=0
+	]]
 	use 'karb94/neoscroll.nvim'
 	require('neoscroll').setup()
 	use 'tpope/vim-sensible'
