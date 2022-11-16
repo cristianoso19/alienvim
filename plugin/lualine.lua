@@ -2,11 +2,12 @@
 -- Author: shadmansaleh
 -- Credit: glepnir
 local lualine = require('lualine')
+local colors = require("tokyonight.colors").setup()
 
 -- Color table for highlights
 -- stylua: ignore
 local colors = {
-  bg       = '#202328',
+  bg       = '#0f0f14',
   fg       = '#bbc2cf',
   yellow   = '#e0af68',
   cyan     = '#73daca',
