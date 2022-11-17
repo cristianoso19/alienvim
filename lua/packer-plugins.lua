@@ -7,13 +7,12 @@ return require ('packer').startup(function()
 		'lukas-reineke/indent-blankline.nvim',
 		'nvim-lua/plenary.nvim',
 		'glepnir/dashboard-nvim',
-		'xiyaowong/telescope-emoji.nvim',
 		'folke/lsp-colors.nvim',
 
+		'xiyaowong/telescope-emoji.nvim',
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		'nvim-telescope/telescope-fzf-native.nvim', run = 'make',
 		'nvim-telescope/telescope-file-browser.nvim',
-
 
 		'nvim-lualine/lualine.nvim',
 		'kyazdani42/nvim-web-devicons',
@@ -21,12 +20,11 @@ return require ('packer').startup(function()
 		'phaazon/hop.nvim', branch = 'v2',
 		'nvim-treesitter/nvim-treesitter', run = ':TSUpdate',
 		'nvim-treesitter/nvim-treesitter-textobjects',
-
 		'p00f/nvim-ts-rainbow', 
 
 		'folke/trouble.nvim',
 		'akinsho/bufferline.nvim', tag = "v3.*",
-		'm4xshen/autoclose.nvim',
+		--'m4xshen/autoclose.nvim',
 		'preservim/nerdcommenter',
 		'neovim/nvim-lspconfig',
 		'williamboman/nvim-lsp-installer',
@@ -43,7 +41,7 @@ return require ('packer').startup(function()
 		'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
 		'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
 		'sheerun/vim-polyglot',
-		'tpope/vim-surround',
+		--'tpope/vim-surround',
 		'mattn/emmet-vim',
 		'karb94/neoscroll.nvim',
 		'tpope/vim-sensible',
@@ -63,7 +61,6 @@ return require ('packer').startup(function()
 		-- or leave it empty to use the default settings
 		-- refer to the configuration section below
 	}
-	require("nvim-autopairs").setup {}
 	require('telescope').setup {
 		extensions = {
 			fzf = {
