@@ -41,7 +41,7 @@ return require ('packer').startup(function()
 		'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
 		'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
 		'sheerun/vim-polyglot',
-		--'tpope/vim-surround',
+		'tpope/vim-surround',
 		'mattn/emmet-vim',
 		'karb94/neoscroll.nvim',
 		'tpope/vim-sensible',

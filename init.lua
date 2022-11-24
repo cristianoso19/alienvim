@@ -10,8 +10,8 @@ syntax = on
 wrap = true
 vim.o.tabstop = 3
 vim.o.shiftwidth = 3
-expandtab = on
-vim.o.breakindent = on
+expandtab = true
+vim.o.breakindent = true
 
 -- Functional wrapper for mapping custom keybindings
 function map(mode, lhs, rhs, opts)
