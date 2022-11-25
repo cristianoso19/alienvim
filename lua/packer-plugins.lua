@@ -8,7 +8,7 @@ return require ('packer').startup(function()
 		'nvim-lua/plenary.nvim',
 		'glepnir/dashboard-nvim',
 		'folke/lsp-colors.nvim',
-
+		'lewis6991/gitsigns.nvim',
 		'xiyaowong/telescope-emoji.nvim',
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		'nvim-telescope/telescope-fzf-native.nvim', run = 'make',
