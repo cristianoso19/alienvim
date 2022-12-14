@@ -55,6 +55,16 @@ return require ('packer').startup(function()
 		"windwp/nvim-autopairs",
 		"akinsho/toggleterm.nvim", tag = '*', 
 	}
+	use {
+  'rmagatti/auto-session',
+  config = function()
+    require("auto-session").setup {
+      log_level = "error",
+   	auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+	   auto_session_enable_last_session=true,
+    }
+  end
+}
 	require'hop'.setup {}
 	require("which-key").setup {
 		-- your configuration comes here
