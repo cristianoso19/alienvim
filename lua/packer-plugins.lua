@@ -54,6 +54,7 @@ return require ('packer').startup(function()
 		'dcampos/cmp-snippy',
 		"windwp/nvim-autopairs",
 		"akinsho/toggleterm.nvim", tag = '*', 
+		"roobert/tailwindcss-colorizer-cmp.nvim",
 	}
 	use {
   'rmagatti/auto-session',
@@ -195,6 +196,12 @@ return require ('packer').startup(function()
 	}
 	require("telescope").load_extension "file_browser"
 	require("telescope").load_extension "emoji"
+	require("tailwindcss-colorizer-cmp").setup{
+      color_square_width = 2,
+   }
+	require("cmp").config.formatting = {
+		format = require("tailwindcss-colorizer-cmp").formatter
+	}
 	-- using packer.nvim
 	vim.opt.termguicolors = true
 	vim.cmd([[
