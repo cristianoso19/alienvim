@@ -55,6 +55,7 @@ return require ('packer').startup(function()
 		"windwp/nvim-autopairs",
 		"akinsho/toggleterm.nvim", tag = '*', 
 		"roobert/tailwindcss-colorizer-cmp.nvim",
+		"NvChad/nvim-colorizer.lua",
 	}
 	use {
   'rmagatti/auto-session',
@@ -201,6 +202,13 @@ return require ('packer').startup(function()
    }
 	require("cmp").config.formatting = {
 		format = require("tailwindcss-colorizer-cmp").formatter
+	}
+	require 'colorizer'.setup{
+		filetypes = {
+			'css',
+			'javascript',
+			html = { mode = 'foreground'; }
+		},
 	}
 	-- using packer.nvim
 	vim.opt.termguicolors = true
