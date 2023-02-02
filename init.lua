@@ -31,7 +31,7 @@ map('n','<Leader>m',':call CocAction("format")<CR>')
 map('n','<Leader>ps',':PackerSync<CR>')
 map('n','<Leader>pi',':PackerInstall<CR>')
 
-map('n','<Leader>ff',':Telescope find_files<CR>')
+map('n','<Leader>ff',':Telescope find_files hidden=true<CR>')
 map('n','<Leader>fg',':Telescope live_grep<CR>')
 map('n','<Leader>fb',':Telescope file_browser<CR>')
 map('n','<Leader>fB',':Telescope buffers<CR>')
