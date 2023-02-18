@@ -48,8 +48,8 @@ return require ('packer').startup(function()
 		'folke/todo-comments.nvim',
 		'kevinhwang91/nvim-hlslens',
 		'petertriho/nvim-scrollbar',
-		--'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
-		--'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
+		'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
+		'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
 		'sheerun/vim-polyglot',
 		'tpope/vim-surround',
 		'mattn/emmet-vim',
@@ -216,6 +216,7 @@ return require ('packer').startup(function()
 			html = { mode = 'foreground'; }
 		},
 	}
+
 	-- using packer.nvim
 	vim.opt.termguicolors = true
 	vim.cmd([[
