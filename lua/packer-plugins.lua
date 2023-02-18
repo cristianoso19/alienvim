@@ -29,17 +29,27 @@ return require ('packer').startup(function()
 		'neovim/nvim-lspconfig',
 		'williamboman/nvim-lsp-installer',
 		'yamatsum/nvim-cursorline',
+		--COMPLETIONS-----------------
 		'hrsh7th/nvim-cmp',
+		'hrsh7th/cmp-buffer',
+		'hrsh7th/cmp-path',
+		'hrsh7th/cmp-nvim-lua',
 		'hrsh7th/cmp-nvim-lsp',
 		'saadparwaiz1/cmp_luasnip',	
+		'onsails/lspkind-nvim',
+		'hrsh7th/cmp-nvim-lsp-signature-help',
+		'dcampos/cmp-snippy',
+		"roobert/tailwindcss-colorizer-cmp.nvim",
+		"windwp/nvim-autopairs",
+		--**************************
 		'L3MON4D3/LuaSnip',
 		'folke/twilight.nvim',
 		'folke/zen-mode.nvim',
 		'folke/todo-comments.nvim',
 		'kevinhwang91/nvim-hlslens',
 		'petertriho/nvim-scrollbar',
-		'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
-		'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
+		--'neoclide/coc.nvim', branch = 'master', run = 'npm install --frozen-lockfile',
+		--'yaegassy/coc-blade', run = 'npm install --frozen-lockfile',
 		'sheerun/vim-polyglot',
 		'tpope/vim-surround',
 		'mattn/emmet-vim',
@@ -51,10 +61,7 @@ return require ('packer').startup(function()
 		'SirVer/ultisnips',
 		'mhartington/formatter.nvim',
 		'dcampos/nvim-snippy',
-		'dcampos/cmp-snippy',
-		"windwp/nvim-autopairs",
 		"akinsho/toggleterm.nvim", tag = '*', 
-		"roobert/tailwindcss-colorizer-cmp.nvim",
 		"NvChad/nvim-colorizer.lua",
 	}
 	use {
@@ -118,7 +125,6 @@ return require ('packer').startup(function()
 			end
 		}
 	}
-	require("nvim-lsp-installer").setup {}
 	require('nvim-cursorline').setup {
 		cursorline = {
 			enable = true,
